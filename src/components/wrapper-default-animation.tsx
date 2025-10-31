@@ -6,6 +6,7 @@ interface BlurPopUpProps {
   children: React.ReactNode;
   delay?: number;
   duration?: number;
+  margin?: string;
 }
 
 export function BlurPopUp({
@@ -13,19 +14,19 @@ export function BlurPopUp({
   className,
   delay,
   duration = 0.4,
+  margin = "100px",
 }: BlurPopUpProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: "20%", filter: "blur(10px)" }}
-      animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+      whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
       exit={{ opacity: 0, y: "20%", filter: "blur(10px)" }}
       transition={{
         delay,
         duration,
         ease: [0.25, 0.46, 0.45, 0.94],
       }}
-      whileInView="animate"
-      viewport={{ once: true }}
+      viewport={{ once: true, margin }}
       className={className}
     >
       {children}

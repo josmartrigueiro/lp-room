@@ -32,7 +32,7 @@ export function StackedBlades(props: React.SVGProps<SVGSVGElement>) {
         animate={{ x: 0, opacity: 0.2, filter: "blur(0px)" }}
         transition={{
           duration: reduce ? 0 : 0.6,
-          delay: reduce ? 0 : 2.6,
+          delay: reduce ? 0 : 1.5,
           ease: [0.25, 0.46, 0.45, 0.94],
         }}
         style={{ transformOrigin: "282px 222.5px" }}
@@ -81,7 +81,7 @@ export function StackedBlades(props: React.SVGProps<SVGSVGElement>) {
         animate={{ x: 0, opacity: 0.3, filter: "blur(0px)" }}
         transition={{
           duration: reduce ? 0 : 0.6,
-          delay: reduce ? 0 : 2.5,
+          delay: reduce ? 0 : 1.4,
           ease: [0.25, 0.46, 0.45, 0.94],
         }}
         style={{ transformOrigin: "241.5px 222.5px" }}
@@ -130,7 +130,7 @@ export function StackedBlades(props: React.SVGProps<SVGSVGElement>) {
         animate={{ x: 0, opacity: 0.4, filter: "blur(0px)" }}
         transition={{
           duration: reduce ? 0 : 0.6,
-          delay: reduce ? 0 : 2.4,
+          delay: reduce ? 0 : 1.3,
           ease: [0.25, 0.46, 0.45, 0.94],
         }}
         style={{ transformOrigin: "201px 222.5px" }}
@@ -179,7 +179,7 @@ export function StackedBlades(props: React.SVGProps<SVGSVGElement>) {
         animate={{ x: 0, opacity: 0.5, filter: "blur(0px)" }}
         transition={{
           duration: reduce ? 0 : 0.6,
-          delay: reduce ? 0 : 2.3,
+          delay: reduce ? 0 : 1.2,
           ease: [0.25, 0.46, 0.45, 0.94],
         }}
         style={{ transformOrigin: "160.5px 222.5px" }}

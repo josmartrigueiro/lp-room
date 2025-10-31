@@ -29,9 +29,9 @@ export function Header() {
 
   return (
     <header
-      className={`w-full user-select-none isolate fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`w-full user-select-none isolate fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-sm bg-background/50 ${
         isScrolled
-          ? "border-b border-border/10 backdrop-blur-sm bg-background/50 shadow-lg shadow-[#181136]/20"
+          ? "border-b border-border/10 shadow-lg shadow-[#181136]/20"
           : "border-b border-transparent"
       }`}
     >

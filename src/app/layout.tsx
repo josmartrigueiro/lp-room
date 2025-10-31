@@ -1,15 +1,50 @@
 import type { Metadata } from "next";
-import { Inter, Roboto_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const carbonaSans = Inter({
-  variable: "--font-carbona-sans",
-  subsets: ["latin"],
+// Carbona carregada da pasta public/fonts
+const carbonaSans = localFont({
+  variable: "--font-sans",
+  src: [
+    {
+      path: "../../public/fonts/Carbona-ExtraLight.woff2",
+      weight: "200",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Carbona-Light.woff2",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Carbona-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Carbona-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  display: "swap",
 });
 
-const carbonaMono = Roboto_Mono({
-  variable: "--font-carbona-mono",
-  subsets: ["latin"],
+const carbonaMono = localFont({
+  variable: "--font-mono",
+  src: [
+    {
+      path: "../../public/fonts/Carbona-MonoExtraLight.woff2",
+      weight: "200",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Carbona-MonoLight.woff2",
+      weight: "300",
+      style: "normal",
+    },
+  ],
+  display: "swap",
 });
 
 export const metadata: Metadata = {

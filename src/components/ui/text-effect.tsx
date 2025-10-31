@@ -25,6 +25,7 @@ export type TextEffectProps = {
   children: string;
   per?: PerType;
   as?: keyof React.JSX.IntrinsicElements;
+  srOnly?: boolean;
   variants?: {
     container?: Variants;
     item?: Variants;
@@ -196,9 +197,6 @@ const AnimationComponent: React.FC<{
   per: "line" | "word" | "char";
   segmentWrapperClassName?: string;
 }> = React.memo(({ segment, variants, per, segmentWrapperClassName }) => {
-  const isPeriod = segment.trim() === ".";
-  const periodSpacing = "ml-[0.15em]";
-
   const content =
     per === "line" ? (
       <motion.span variants={variants} className="block">
@@ -208,7 +206,7 @@ const AnimationComponent: React.FC<{
       <motion.span
         aria-hidden="true"
         variants={variants}
-        className={cn("inline-block whitespace-pre", isPeriod && periodSpacing)}
+        className={cn("inline-block whitespace-pre")}
       >
         {segment}
       </motion.span>
@@ -219,10 +217,7 @@ const AnimationComponent: React.FC<{
             key={`char-${charIndex}-${segment}`}
             aria-hidden="true"
             variants={variants}
-            className={cn(
-              "inline-block whitespace-pre",
-              char === "." && periodSpacing
-            )}
+            className={cn("inline-block whitespace-pre")}
           >
             {char}
           </motion.span>
@@ -296,6 +291,7 @@ export function TextEffect({
   children,
   per = "word",
   as = "p",
+  srOnly = false,
   variants,
   className,
   preset = "fade",
@@ -374,7 +370,9 @@ export function TextEffect({
     <AnimatePresence mode="popLayout">
       {trigger && (
         <MotionTag {...motionProps}>
-          {per !== "line" ? <span className="sr-only">{children}</span> : null}
+          {srOnly && per !== "line" ? (
+            <span className="sr-only">{children}</span>
+          ) : null}
           {segments.map((segment, index) => (
             <AnimationComponent
               key={`${per}-${index}-${segment}`}
