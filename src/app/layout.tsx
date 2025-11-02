@@ -35,12 +35,22 @@ const carbonaMono = localFont({
   src: [
     {
       path: "../../public/fonts/Carbona-MonoExtraLight.woff2",
-      weight: "200",
+      weight: "100",
       style: "normal",
     },
     {
       path: "../../public/fonts/Carbona-MonoLight.woff2",
-      weight: "300",
+      weight: "200",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Carbona-MonoMedium.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/Carbona-MonoBold.woff2",
+      weight: "500",
       style: "normal",
     },
   ],

@@ -60,8 +60,8 @@
   --accent: oklch(0.746 0 0);
   --accent-foreground: oklch(0.4931 0.2951 281.5);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.92 0.004 286.32);
-  --input: oklch(0.92 0.004 286.32);
+  --border: oklch(0.2836 0 0);
+  --input: oklch(0.2836 0 0);
   --ring: oklch(0.705 0.015 286.067);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
@@ -74,8 +74,28 @@
   --sidebar-primary-foreground: oklch(0.9642 0 0);
   --sidebar-accent: oklch(0.746 0 0);
   --sidebar-accent-foreground: oklch(0.4931 0.2951 281.5);
-  --sidebar-border: oklch(0.92 0.004 286.32);
+  --sidebar-border: oklch(0.2836 0 0);
   --sidebar-ring: oklch(0.705 0.015 286.067);
+
+  --tw-inset-shadow: 0 0 #0000;
+  --tw-inset-ring-shadow: 0 0 #0000;
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow:
+    0px 32px 64px -16px var(--tw-shadow-color, transparent), 0px 16px 32px -8px var(
+      --tw-shadow-color,
+      transparent
+    ), 0px 8px 16px -4px var(--tw-shadow-color, transparent), 0px 4px 8px -2px var(
+      --tw-shadow-color,
+      transparent
+    ), 0px -8px 16px -1px var(--tw-shadow-color, transparent), 0px 2px 4px -1px var(
+      --tw-shadow-color,
+      transparent
+    ), 0px 0px 0px 1px var(--tw-shadow-color, transparent), inset 0px 0px 0px 1px var(
+      --tw-shadow-color,
+      transparent
+    ), inset 0px 1px 0px var(--tw-shadow-color, #fff3);
+  --tw-shadow-color: transparent;
 }
 
 .dark {
@@ -85,7 +105,7 @@
   --card-foreground: oklch(0.9642 0 0);
   --popover: oklch(0.4931 0.2951 281.5);
   --popover-foreground: oklch(0.9642 0 0);
-  --primary: oklch(0.92 0.004 286.32);
+  --primary: oklch(0.2836 0 0);
   --primary-foreground: oklch(0.4931 0.2951 281.5);
   --secondary: oklch(0.746 0 0);
   --secondary-foreground: oklch(0.9642 0 0);
@@ -118,5 +138,31 @@
   }
   body {
     @apply bg-background text-foreground font-sans;
+  }
+}
+
+.carousel-peek [data-slot="carousel-content"] {
+  overflow-x: visible !important;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.carousel-peek [data-slot="carousel-content"]::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-peek [data-slot="carousel-content"] > div {
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .carousel-peek [data-slot="carousel-content"] > div {
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .carousel-peek [data-slot="carousel-content"] > div {
+    padding-right: 3rem;
   }
 }

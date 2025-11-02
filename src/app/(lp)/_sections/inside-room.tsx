@@ -54,7 +54,7 @@ export function InsideRoom() {
       id="inside-room"
       className="max-w-7xl sm:mx-auto px-4 sm:px-6 mt-24 sm:mt-28 xl:min-h-[680px] xl:h-screen flex flex-col justify-between gap-6 items-center xl:gap-10 md:min-h-[375px] my-auto"
     >
-      <h2 className="inline-block text-primary font-mono [word-spacing:0.25em] sm:[word-spacing:0.5em] text-center max-w-sm sm:max-w-3xl leading-snug tracking-[-.022em] text-[2rem] sm:text-[2.25rem] md:text-[2.5rem] lg:text-[3rem] font-bold">
+      <h2 className="inline-block text-primary font-mono [word-spacing:0.25em] sm:[word-spacing:0.5em] text-center max-w-sm sm:max-w-3xl leading-snug tracking-[-.022em] text-[2rem] sm:text-[2.25rem] md:text-[2.5rem] lg:text-[3rem] font-normal">
         <span className="sr-only"> O que você vai receber dentro do Room</span>
         <TextEffect
           as="span"
@@ -152,7 +152,7 @@ export function InsideRoom() {
             }}
           >
             <div className="relative size-full rounded-[inherit] overflow-hidden bg-[#0B0B0C] p-6 text-center flex flex-col">
-              <span className="h-15 block font-mono text-lg font-bold">
+              <span className="h-15 block font-mono text-lg font-normal">
                 {card.name}
               </span>
               <p className="text-sm text-muted-foreground mt-2 mb-8 max-w-[242px] mx-auto">

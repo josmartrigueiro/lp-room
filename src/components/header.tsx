@@ -9,9 +9,10 @@ import { Button } from "./ui/button";
 
 const menuItems = [
   { name: "Início", href: "/#hero" },
-  { name: "Nossa história", href: "/#our-story" },
-  { name: "Serviços", href: "/#specialized-areas" },
-  { name: "Artigos", href: "/blog" },
+  { name: "O que é o Room", href: "/#about-room" },
+  { name: "Pastores", href: "/#who-are-shepherds" },
+  { name: "Conteúdos", href: "/#inside-room" },
+  { name: "Dúvidas", href: "/#faq" },
 ];
 
 export function Header() {
@@ -26,6 +27,15 @@ export function Header() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleLinkClick = (href: string) => {
+    if (href === "/#hero") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      setIsOpen(false);
+    } else {
+      setIsOpen(false);
+    }
+  };
 
   return (
     <header
@@ -53,6 +63,12 @@ export function Header() {
                 key={item.name}
                 href={item.href}
                 className="text-muted-foreground hover:text-foreground transition-colors px-3 py-2"
+                onClick={(e) => {
+                  if (item.href === "/#hero") {
+                    e.preventDefault();
+                    handleLinkClick(item.href);
+                  }
+                }}
               >
                 {item.name}
               </Link>
@@ -113,8 +129,15 @@ export function Header() {
                   >
                     <Link
                       href={item.href}
-                      className="text-3xl text-gray-600 hover:text-primary font-serif p-3 inline-block transition-colors"
-                      onClick={() => setIsOpen(false)}
+                      className="font-sans text-3xl text-gray-600 hover:text-primary p-3 inline-block transition-colors"
+                      onClick={(e) => {
+                        if (item.href === "/#hero") {
+                          e.preventDefault();
+                          handleLinkClick(item.href);
+                        } else {
+                          setIsOpen(false);
+                        }
+                      }}
                     >
                       {item.name}
                     </Link>

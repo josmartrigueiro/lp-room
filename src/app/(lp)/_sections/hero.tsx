@@ -10,7 +10,7 @@ export function Hero() {
       className="w-full max-w-7xl px-6 mt-24 xl:mt-0 xl:min-h-[680px] xl:h-[calc(100vh-80px)] flex justify-between mx-auto gap-8 flex-col xl:flex-row xl:items-center xl:gap-12 md:min-h-[375px] my-auto"
     >
       <div className="space-y-4">
-        <h1 className="font-mono text-left [word-spacing:0.5em] max-w-lg leading-snug tracking-[-.022em] sm:text-[3rem] text-[2.5rem] font-bold">
+        <h1 className="font-mono text-left [word-spacing:0.5em] max-w-lg leading-snug sm:tracking-[-.022em] sm:text-[3rem] text-[1.98rem] font-normal">
           <span className="sr-only">Entre. Feche a porta. Permaneça.</span>
           <TextEffect
             as="span"
@@ -38,7 +38,7 @@ export function Hero() {
               ease: [0.19, 1, 0.22, 1],
             }}
             delay={0.4}
-            className="ml-7"
+            className="ml-[32px] md:ml-7"
           >
             Permaneça.
           </TextEffect>
@@ -66,7 +66,7 @@ export function Hero() {
         </BlurPopUp>
       </div>
       <div className="">
-        {/* <StackedBlades className="translate-x-12" /> */}
+        <StackedBlades className="translate-x-12" />
       </div>
     </section>
   );

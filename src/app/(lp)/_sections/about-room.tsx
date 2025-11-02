@@ -1,9 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { TextEffect } from "@/components/ui/text-effect";
 import { BlurPopUp } from "@/components/wrapper-default-animation";
-import Image from "next/image";
 
 export function AboutRoom() {
   return (
@@ -13,7 +13,7 @@ export function AboutRoom() {
         className="max-w-7xl mx-auto px-6 mt-24 xl:mt-0 xl:min-h-[680px] xl:h-screen flex justify-between gap-8 flex-col xl:flex-row xl:items-center xl:gap-12 md:min-h-[375px] my-auto"
       >
         <div className="space-y-5">
-          <h2 className="font-mono text-left max-w-sm leading-snug sm:text-[3rem] text-[2.5rem] font-bold">
+          <h2 className="font-mono text-left max-w-sm leading-snug sm:text-[3rem] text-[2.5rem] font-normal">
             <span className="sr-only">O que é a comunidade Room</span>
             <TextEffect
               as="span"
@@ -65,7 +65,7 @@ export function AboutRoom() {
               }}
               delay={0.8}
               useViewport={true}
-              viewport={{ once: true }}
+              viewport={{ once: true, margin: "-80px" }}
               className="max-w-[400px]"
             >
               Aqui, você encontra ensinos que não cabem apenas no Instagram.
@@ -83,7 +83,7 @@ export function AboutRoom() {
               }}
               delay={1}
               useViewport={true}
-              viewport={{ once: true }}
+              viewport={{ once: true, margin: "-60px" }}
               className="max-w-[400px]"
             >
               São conexões reais, e uma experiência espiritualque atravessa
@@ -102,13 +102,13 @@ export function AboutRoom() {
               }}
               delay={1.2}
               useViewport={true}
-              viewport={{ once: true }}
+              viewport={{ once: true, margin: "-40px" }}
               className="max-w-[480px]"
             >
               Não é sobre aprender mais. É sobre viver com propósito.
             </TextEffect>
           </div>
-          <BlurPopUp delay={1.6}>
+          <BlurPopUp delay={1.6} margin="-20px">
             <Button variant="secondary" size="lg" className="mt-6">
               Quero fazer parte
             </Button>
@@ -116,7 +116,7 @@ export function AboutRoom() {
         </div>
         <div>
           <Image
-            src="/lp-room-screenshot.png"
+            src="/room-screenshot.png"
             alt="About Room"
             width={1100}
             height={992}
