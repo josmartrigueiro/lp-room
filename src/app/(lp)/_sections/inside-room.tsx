@@ -52,7 +52,7 @@ export function InsideRoom() {
   return (
     <section
       id="inside-room"
-      className="relative z-20 max-w-7xl sm:mx-auto px-4 sm:px-6 mt-24 sm:mt-28 mb-16 sm:mb-20 xl:min-h-[680px] max-h-[1080px] xl:h-screen flex flex-col justify-between gap-6 items-center xl:gap-10 md:min-h-[375px] my-auto"
+      className="relative z-20 max-w-7xl sm:mx-auto px-4 sm:px-6 mt-24 sm:mt-28 mb-16 sm:mb-20 xl:min-h-[680px] xl:max-h-[1080px] xl:h-screen flex flex-col justify-between gap-6 items-center xl:gap-10 md:min-h-[375px] my-auto"
     >
       <h2 className="inline-block text-primary font-mono [word-spacing:0.25em] sm:[word-spacing:0.5em] text-center max-w-sm sm:max-w-3xl leading-snug tracking-[-.022em] text-[2rem] sm:text-[2.25rem] md:text-[2.5rem] lg:text-[3rem] font-normal">
         <span className="sr-only"> O que você vai receber dentro do Room</span>
