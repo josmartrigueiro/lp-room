@@ -17,7 +17,7 @@ export function WhoAreShepherds() {
       />
       <section
         id="who-are-shepherds"
-        className="z-20 max-w-7xl mx-auto px-6 xl:mt-0 xl:min-h-[680px] max-h-[1080px] xl:h-screen flex items-center justify-between gap-8 flex-col lg:flex-row xl:items-center xl:gap-12 md:min-h-[375px] my-auto"
+        className="z-20 max-w-7xl mx-auto px-6 xl:mt-0 xl:min-h-[680px] lg:max-h-[1080px] xl:h-screen flex items-center justify-between gap-8 flex-col lg:flex-row xl:items-center xl:gap-12 md:min-h-[375px] my-auto"
       >
         <Image
           src="/shepherds-photo.png"
