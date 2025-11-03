@@ -412,7 +412,7 @@ export function Testimonials() {
                 ease: [0.23, 1, 0.32, 1],
               }}
             >
-              Acompanhe o nosso conteúdo, nos siga no Instragram
+              Acompanhe o nosso conteúdo, nos siga no Instagram
             </motion.p>
             <motion.div
               initial={{ opacity: 0, x: 20 }}
