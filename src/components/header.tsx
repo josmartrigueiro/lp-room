@@ -75,8 +75,12 @@ export function Header() {
             ))}
           </nav>
 
-          <Button size="lg" className="md:flex hidden">
-            <Link href="/#contact-us">Garanta já</Link>
+          <Button
+            render={<Link href="https://sun.eduzz.com/60EE72PB03" />}
+            size="lg"
+            className="md:flex hidden"
+          >
+            Garanta já
           </Button>
 
           <div className="md:hidden">

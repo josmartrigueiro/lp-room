@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { TextEffect } from "@/components/ui/text-effect";
 import { BlurPopUp } from "@/components/wrapper-default-animation";
+import Link from "next/link";
 
 export function AboutRoom() {
   return (
@@ -109,7 +110,12 @@ export function AboutRoom() {
             </TextEffect>
           </div>
           <BlurPopUp delay={1.6} margin="-20px">
-            <Button variant="secondary" size="lg" className="mt-6">
+            <Button
+              render={<Link href="https://sun.eduzz.com/60EE72PB03" />}
+              variant="secondary"
+              size="lg"
+              className="mt-6"
+            >
               Quero fazer parte
             </Button>
           </BlurPopUp>

@@ -3,6 +3,7 @@
 import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { TextEffect } from "@/components/ui/text-effect";
+import Link from "next/link";
 
 const faqs = [
   {
@@ -140,7 +141,11 @@ export function FAQ() {
             },
           }}
         >
-          <Button size="lg" className="mt-6 sm:mt-0 sm:w-auto">
+          <Button
+            render={<Link href="https://sun.eduzz.com/60EE72PB03" />}
+            size="lg"
+            className="mt-6 sm:mt-0 sm:w-auto"
+          >
             Descubra agora
           </Button>
         </motion.div>

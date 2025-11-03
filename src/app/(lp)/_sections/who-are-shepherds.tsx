@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { TextEffect } from "@/components/ui/text-effect";
 import { BlurPopUp } from "@/components/wrapper-default-animation";
+import Link from "next/link";
 
 export function WhoAreShepherds() {
   return (
@@ -135,7 +136,12 @@ export function WhoAreShepherds() {
 
           <div className="w-full justify-end flex">
             <BlurPopUp delay={0.8} margin="-30px">
-              <Button variant="secondary" size="lg" className="mt-6 ml-auto">
+              <Button
+                render={<Link href="https://sun.eduzz.com/60EE72PB03" />}
+                variant="secondary"
+                size="lg"
+                className="mt-6 ml-auto"
+              >
                 Quero fazer parte
               </Button>
             </BlurPopUp>

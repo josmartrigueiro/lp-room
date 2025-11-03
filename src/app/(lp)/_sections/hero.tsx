@@ -2,6 +2,7 @@ import { StackedBlades } from "@/components/stacked-blades";
 import { Button } from "@/components/ui/button";
 import { TextEffect } from "@/components/ui/text-effect";
 import { BlurPopUp } from "@/components/wrapper-default-animation";
+import Link from "next/link";
 
 export function Hero() {
   return (
@@ -60,7 +61,11 @@ export function Hero() {
         </TextEffect>
 
         <BlurPopUp delay={1}>
-          <Button size="lg" className="mt-5">
+          <Button
+            render={<Link href="https://sun.eduzz.com/60EE72PB03" />}
+            size="lg"
+            className="mt-5"
+          >
             Descubra agora
           </Button>
         </BlurPopUp>
