@@ -1,6 +1,4 @@
-// import type { Metadata } from "next";
-
-// import { Footer } from "@/components/footer/footer";
+import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 
 export default function RootLayout({
@@ -13,9 +11,8 @@ export default function RootLayout({
       <Header />
       <main className="flex-1 flex-col flex min-h-[calc(100dvh-1dvh)] pt-[74px]">
         {children}
-        <div className="h-[100px]" />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

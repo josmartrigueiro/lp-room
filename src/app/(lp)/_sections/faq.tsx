@@ -33,7 +33,7 @@ export function FAQ() {
   return (
     <section
       id="faq"
-      className="max-w-7xl w-full sm:mx-auto px-4 sm:px-6 mt-24 flex flex-col sm:mt-28 xl:min-h-[680px] xl:h-screen justify-center items-start xl:gap-10 md:min-h-[375px] my-auto"
+      className="max-w-7xl w-full sm:mx-auto px-4 sm:px-6 mt-24 flex flex-col sm:mt-28 xl:min-h-[680px] max-h-[1080px] xl:h-screen justify-center items-start xl:gap-10 md:min-h-[375px] my-auto"
     >
       <div className="w-full flex mb-12 gap-6 lg:gap-14 xl:gap-20 items-center justify-center">
         <h2 className="text-primary flex-col flex sm:flex-row gap-6 text-left leading-8 sm:leading-snug sm:text-[3rem] text-[2.5rem] font-normal">

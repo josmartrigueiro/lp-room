@@ -10,7 +10,7 @@ export function AboutRoom() {
     <div className="relative bg-[url('/bg-spotlight.png')] bg-no-repeat bg-cover bg-bottom-left before:absolute before:inset-0 before:bg-black/40 before:content-[''] before:pointer-events-none after:absolute after:inset-0 after:content-[''] after:pointer-events-none after:bg-[linear-gradient(to_bottom,var(--background)_0%,transparent_12%,transparent_88%,var(--background)_100%)]">
       <section
         id="about-room"
-        className="max-w-7xl mx-auto px-6 mt-24 xl:mt-0 xl:min-h-[680px] xl:h-screen flex justify-between gap-8 flex-col xl:flex-row xl:items-center xl:gap-12 md:min-h-[375px] my-auto"
+        className="max-w-7xl mx-auto px-6 mt-24 xl:mt-0 xl:min-h-[680px] max-h-[1080px] xl:h-screen flex justify-between gap-8 flex-col xl:flex-row xl:items-center xl:gap-12 md:min-h-[375px] my-auto"
       >
         <div className="space-y-5">
           <h2 className="font-mono text-left max-w-sm leading-snug sm:text-[3rem] text-[2.5rem] font-normal">
@@ -114,14 +114,23 @@ export function AboutRoom() {
             </Button>
           </BlurPopUp>
         </div>
-        <div>
+        <div className="relative">
           <Image
-            src="/room-screenshot.png"
+            src="/lp-room-screenshot.png"
+            alt="About Room - Background"
+            width={1100}
+            height={992}
+            quality={100}
+            className="w-[550px] h-auto absolute -top-8 -left-10 opacity-50 blur-[1px]"
+            priority
+          />
+          <Image
+            src="/lp-room-screenshot.png"
             alt="About Room"
             width={1100}
             height={992}
             quality={100}
-            className="w-[550px] h-auto z-50"
+            className="w-[550px] h-auto relative z-10"
             priority
           />
         </div>

@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="w-full max-w-7xl px-6 mt-24 xl:mt-0 xl:min-h-[680px] xl:h-[calc(100vh-80px)] flex justify-between mx-auto gap-8 flex-col xl:flex-row xl:items-center xl:gap-12 md:min-h-[375px] my-auto"
+      className="w-full max-w-7xl px-6 mt-24 xl:mt-0 xl:min-h-[680px] max-h-[1080px] xl:h-[calc(100dvh-80px)] flex justify-between mx-auto gap-8 flex-col xl:flex-row xl:items-center xl:gap-12 md:min-h-[375px] my-auto"
     >
       <div className="space-y-4">
         <h1 className="font-mono text-left [word-spacing:0.5em] max-w-lg leading-snug sm:tracking-[-.022em] sm:text-[3rem] text-[1.98rem] font-normal">

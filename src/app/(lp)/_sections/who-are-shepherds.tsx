@@ -12,11 +12,11 @@ export function WhoAreShepherds() {
         width={956}
         height={1177}
         quality={100}
-        className="absolute lg:left-auto lg:top-1/2 lg:-translate-y-1/2 sm:hidden xl:block xl:-right-32 lg:right-0 w-[697px] h-[662px] md:w-[856px] md:h-[880px] xl:w-[956px] xl:h-[1177px] -bottom-20 left-0"
+        className="z-10 absolute lg:left-auto lg:top-1/2 lg:-translate-y-1/2 sm:hidden xl:block xl:-right-32 lg:right-0 w-[697px] h-[662px] md:w-[856px] md:h-[880px] xl:w-[956px] xl:h-[1177px] bottom-0 md:-bottom-10 lg:-bottom-20 left-0"
       />
       <section
         id="who-are-shepherds"
-        className="max-w-7xl mx-auto px-6 xl:mt-0 xl:min-h-[680px] xl:h-screen flex items-center justify-between gap-8 flex-col lg:flex-row xl:items-center xl:gap-12 md:min-h-[375px] my-auto"
+        className="z-20 max-w-7xl mx-auto px-6 xl:mt-0 xl:min-h-[680px] max-h-[1080px] xl:h-screen flex items-center justify-between gap-8 flex-col lg:flex-row xl:items-center xl:gap-12 md:min-h-[375px] my-auto"
       >
         <Image
           src="/shepherds-photo.png"
@@ -24,10 +24,10 @@ export function WhoAreShepherds() {
           width={697}
           height={1021}
           quality={100}
-          className="z-10 -translate-y-10 w-[497px] h-[582px] lg:w-[677px] lg:h-[1001px]"
+          className="relative z-20 -translate-y-10 w-[497px] h-[582px] lg:w-[677px] lg:h-[1001px]"
         />
 
-        <div className="space-y-5 flex flex-col items-center md:justify-end md:items-end">
+        <div className="relative z-20 space-y-5 flex flex-col items-center md:justify-end md:items-end">
           <h2 className="font-mono max-w-sm text-end leading-10 md:leading-snug sm:text-[3rem] text-[2.5rem] font-normal">
             <span className="sr-only">Quem são os pastores</span>
             <TextEffect
