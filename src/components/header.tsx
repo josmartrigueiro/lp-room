@@ -57,7 +57,7 @@ export function Header() {
             />
           </Link>
 
-          <nav className="hidden md:flex space-x-2">
+          <nav className="hidden xl:flex space-x-2">
             {menuItems.map((item) => (
               <Link
                 key={item.name}
@@ -78,15 +78,15 @@ export function Header() {
           <Button
             render={<Link href="https://sun.eduzz.com/60EE72PB03" />}
             size="lg"
-            className="md:flex hidden"
+            className="xl:flex hidden"
           >
             Garanta já
           </Button>
 
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 z-50 relative md:hidden"
+              className="text-gray-600 hover:text-gray-900 focus:outline-none focus:text-gray-900 z-50 relative xl:hidden"
               type="button"
               aria-label={isOpen ? "Close menu" : "Open menu"}
             >

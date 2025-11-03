@@ -391,7 +391,7 @@ export function Testimonials() {
           </div>
 
           <motion.div
-            className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mt-10 px-4 sm:px-6 xl:px-0 w-full max-w-full"
+            className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 mt-10 px-4 sm:px-6 xl:px-0 w-full max-w-full min-w-0"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
@@ -402,7 +402,7 @@ export function Testimonials() {
             }}
           >
             <motion.p
-              className="text-zinc-100 text-base sm:text-lg font-mono max-w-md lg:max-w-xs"
+              className="text-zinc-100 text-base sm:text-lg font-mono max-w-md lg:max-w-xs shrink min-w-0"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-50px" }}
@@ -415,6 +415,7 @@ export function Testimonials() {
               Acompanhe o nosso conteúdo, nos siga no Instagram
             </motion.p>
             <motion.div
+              className="shrink-0"
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-50px" }}
@@ -432,7 +433,7 @@ export function Testimonials() {
                     href="https://www.instagram.com/entrenoroom"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2"
+                    className="flex items-center gap-2 xl:-translate-x-21"
                   />
                 }
               >
