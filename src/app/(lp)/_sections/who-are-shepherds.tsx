@@ -25,7 +25,7 @@ export function WhoAreShepherds() {
           width={697}
           height={1021}
           quality={100}
-          className="relative z-20 -translate-y-10 w-[497px] h-[582px] lg:w-[677px] lg:h-[1001px]"
+          className="relative z-20 -translate-y-15 sm:-translate-y-10 w-[497px] h-[582px] lg:w-[677px] lg:h-[1001px]"
         />
 
         <div className="relative z-20 space-y-5 flex flex-col items-center md:justify-end md:items-end">
