@@ -9,7 +9,7 @@ const faqs = [
   {
     question: "É uma igreja?",
     answer:
-      "Não, ROOM é uma comudade digital complementar à sua caminhada de fé.",
+      "Não, ROOM é uma comunidade digital complementar à sua caminhada de fé.",
   },
   {
     question: "Como acesso o conteúdo?",
