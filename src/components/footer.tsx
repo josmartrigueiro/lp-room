@@ -58,7 +58,7 @@ export function Footer() {
               <Button
                 render={
                   <Link
-                    href="https://www.instagram.com/entrenoroom"
+                    href="https://wa.me/5584987885140?text=Ol%C3%A1%2C%20gostaria%20de%20entender%20mais%20sobre%20o%20ROOM"
                     target="_blank"
                     rel="noopener noreferrer"
                   />
