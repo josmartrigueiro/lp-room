@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { FacebookPixel } from "@/components/facebook-pixel";
 
 const carbonaSans = localFont({
   variable: "--font-sans",
@@ -73,6 +74,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="scroll-smooth">
       <body className={`${carbonaSans.variable} ${carbonaMono.variable}`}>
+        <FacebookPixel />
         <div className="bg-background min-h-screen">{children}</div>
       </body>
     </html>
